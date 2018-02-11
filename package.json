@@ -1,5 +1,5 @@
 {
-  "name": "apier",
+  "name": "apier-package",
   "version": "0.2.0",
   "description": "declarative api",
   "main": "app/index.js",
@@ -19,10 +19,10 @@
     "jwt",
     "bcrypt"
   ],
-  "author": "phytertek",
+  "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phytertek/apier"
+    "url": ""
   },
   "license": "MIT",
   "dependencies": {
