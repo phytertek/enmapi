@@ -6,20 +6,23 @@
   "engines": {
     "node": "8.9.1"
   },
-  "keywords": ["api", "node", "express", "mongo", "jwt", "bcrypt"],
-  "author": "phytertek",
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "Ryan Lowe <ryan.phytertek@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/phytertek/enmapi"
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-device": "^0.4.2",
     "helmet": "^3.9.0",
-    "jwt-simple": "^0.5.1",
     "mongoose": "^4.12.1",
     "morgan": "^1.9.0",
     "validator": "^9.1.2",
