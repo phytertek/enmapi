@@ -1,6 +1,6 @@
 const express = require('express');
 // pull in configuration object
-const appConfig = require('../../appConfig');
+const appConfig = require('../index').appConfig();
 
 const server = express();
 
@@ -25,7 +25,7 @@ server.use((req, res) =>
 );
 
 // connect server
-const { Name, Host, Port } = appConfig.Config;
+const { Name, Host, Port } = appConfig;
 
 server.listen(Port, error => {
   if (error) return logger.error(`Error starting server`, error);

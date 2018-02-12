@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 // logger
 const logger = require('../common/logger');
+
 // pull in configuration object
-const appConfig = require('../../appConfig');
+const appConfig = require('../index').appConfig();
 
 // pull out database model from config object
 const appModel = require('./utils/buildModel')(appConfig);
@@ -12,7 +13,7 @@ const appModel = require('./utils/buildModel')(appConfig);
 const DB = require('./utils/buildDB')(appModel);
 
 // connect DB
-const { DatabaseName, DatabaseURI } = appConfig.Config;
+const { DatabaseName, DatabaseURI } = appConfig;
 
 mongoose.Promise = global.Promise;
 
