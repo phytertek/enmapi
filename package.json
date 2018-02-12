@@ -1,30 +1,17 @@
 {
-  "name": "apier-package",
-  "version": "0.2.0",
+  "name": "enmapi",
+  "version": "1.0.0",
   "description": "declarative api",
-  "main": "app/index.js",
+  "main": "index.js",
   "engines": {
     "node": "8.9.1"
   },
-  "scripts": {
-    "start:devdb": "mongod --dbpath data",
-    "start:dev": "nodemon app/index.js",
-    "start": "node app/index.js"
-  },
-  "keywords": [
-    "api",
-    "node",
-    "express",
-    "mongo",
-    "jwt",
-    "bcrypt"
-  ],
-  "author": "",
+  "keywords": ["api", "node", "express", "mongo", "jwt", "bcrypt"],
+  "author": "phytertek",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/phytertek/enmapi"
   },
-  "license": "MIT",
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
