@@ -1,9 +1,14 @@
 {
   "name": "enmapi",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "declarative api",
   "main": "index.js",
-  "keywords": ["api", "node", "express", "mongo"],
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "mongo"
+  ],
   "author": "Ryan Lowe <ryan.phytertek@gmail.com>",
   "repository": {
     "type": "git",
