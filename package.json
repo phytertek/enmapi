@@ -1,6 +1,6 @@
 {
   "name": "enmapi",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "declarative api",
   "main": "index.js",
   "keywords": [
