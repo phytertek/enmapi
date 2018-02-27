@@ -24,10 +24,4 @@ server.use((req, res) =>
   })
 );
 
-// connect server
-const { Name, Host, Port } = appConfig;
-
-server.listen(Port, error => {
-  if (error) return logger.error(`Error starting server`, error);
-  logger.info(`Server running at ${Host}:${Port}`);
-});
+module.exports = server;

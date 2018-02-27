@@ -10,7 +10,7 @@ module.exports.server = {
     appConfig.Components = getComponentConfig();
     require('./database');
     require('./services');
-    require('./server');
+    require('./server/start');
   }
 };
 

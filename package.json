@@ -3,16 +3,26 @@
   "version": "1.1.2",
   "description": "declarative api",
   "main": "index.js",
-  "keywords": [
-    "api",
-    "node",
-    "express",
-    "mongo"
-  ],
+  "keywords": ["api", "node", "express", "mongo"],
   "author": "Ryan Lowe <ryan.phytertek@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/phytertek/enmapi"
+  },
+  "scripts": {
+    "patch": "npm run git:patch && npm run github:push",
+    "git:patch":
+      "git add . && git commit -m 'publish patch' && npm run patch:publish",
+    "patch:publish": "npm version patch && npm publish",
+    "minor": "npm run git:minor && npm run github:push",
+    "git:minor":
+      "git add . && git commit -m 'publish minor' && npm run minor:publish",
+    "minor:publish": "npm version minor && npm publish",
+    "major": "npm run git:major && npm run github:push",
+    "git:major":
+      "git add . && git commit -m 'publish major' && npm run major:publish",
+    "major:publish": "npm version major && npm publish",
+    "github:push": "git push origin master"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
