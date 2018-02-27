@@ -21,6 +21,9 @@ const testNoLogger = {
   info: () => {
     return;
   },
-  error: error => logger.error(error)
+  // error: error => logger.error(error)
+  error: () => {
+    return;
+  }
 };
 module.exports = Level !== 'test' ? logger : testNoLogger;
