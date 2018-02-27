@@ -17,5 +17,7 @@ const logger = new winston.Logger({
 logger.stream = {
   write: message => logger.info(message)
 };
-
-module.exports = logger;
+const testNoLogger = input => {
+  return input;
+};
+module.exports = Level !== 'test' ? logger : testNoLogger;
