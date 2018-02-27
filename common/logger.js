@@ -1,7 +1,7 @@
 const winston = require('winston');
 const { Level = 'development', Name } = require('../index').appConfig();
 
-console.log('Environment level', Level);
+if (Level !== 'test') console.log('Environment level', Level);
 const logger = new winston.Logger({
   transports: [
     new winston.transports.Console({
