@@ -8,7 +8,8 @@ const server = express();
 const logger = require('../common/logger');
 
 // add server middleware
-require('./middleware/morgan')(server, logger);
+if (process.env.NODE_ENV !== 'test')
+  require('./middleware/morgan')(server, logger);
 require('./middleware/helmet')(server);
 require('./middleware/bodyParser')(server);
 require('./middleware/cors')(server);
