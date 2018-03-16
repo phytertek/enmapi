@@ -4,6 +4,9 @@ const appConfig = require('../index').appConfig();
 
 const server = express();
 
+// Use new internal express body parser
+server.use(express.json());
+
 // logger
 const logger = require('../common/logger');
 
@@ -11,7 +14,6 @@ const logger = require('../common/logger');
 if (process.env.NODE_ENV !== 'test')
   require('./middleware/morgan')(server, logger);
 require('./middleware/helmet')(server);
-require('./middleware/bodyParser')(server);
 require('./middleware/cors')(server);
 require('./middleware/expressDevice')(server);
 
