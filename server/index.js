@@ -18,7 +18,7 @@ require('./middleware/cors')(server);
 require('./middleware/expressDevice')(server);
 
 // build Routes
-require('./utils/buildRoutes')(appConfig, server, express);
+require('./utils/buildRoutes')(appConfig, server);
 
 // Handle unspecified routes
 server.use((req, res) =>
